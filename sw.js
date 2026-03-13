@@ -1,4 +1,4 @@
-const CACHE = 'artelier-v3';
+const CACHE = 'artelier-v4';
 const ASSETS = [
   './',
   './index.html',
