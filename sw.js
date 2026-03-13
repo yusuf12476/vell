@@ -1,10 +1,10 @@
-const CACHE = 'artelier-v4';
+const CACHE = 'artelier-v5';
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
-  'https://placehold.co/192x192/1a1209/c9a84c?text=✦',
-  'https://placehold.co/512x512/1a1209/c9a84c?text=✦'
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 self.addEventListener('install', e => {
