@@ -1,5 +1,11 @@
-const CACHE = 'artelier-v2';
-const ASSETS = ['./', './index.html', './manifest.json'];
+const CACHE = 'artelier-v3';
+const ASSETS = [
+  './',
+  './index.html',
+  './manifest.json',
+  'https://placehold.co/192x192/1a1209/c9a84c?text=✦',
+  'https://placehold.co/512x512/1a1209/c9a84c?text=✦'
+];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => Promise.allSettled(ASSETS.map(a => c.add(a)))));
