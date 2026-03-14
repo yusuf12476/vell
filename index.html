@@ -630,7 +630,7 @@ function setupAuth(){
   $('forgotBtn').addEventListener('click', async () => {
     const email=$('loginEmail').value.trim();
     if(!email){setMsg('loginMsg','Enter your email above first','err');return;}
-    const redirectTo = 'https://yusuf12476.github.io/vell/';
+    const redirectTo = 'https://yusuf12476.github.io/artelier/';
     const{error}=await db.auth.resetPasswordForEmail(email,{redirectTo});
     if(error) setMsg('loginMsg',error.message,'err');
     else setMsg('loginMsg','✓ Reset email sent! Check your inbox.','ok');
